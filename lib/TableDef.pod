@@ -1,0 +1,140 @@
+# PODNAME: TableDef
+
+# VERSION
+# DATE
+
+1;
+# ABSTRACT: Table data definition
+
+__END__
+
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+TableDef - Table data definition
+
+=head1 VERSION
+
+version 1.0.3
+
+=head1 RELEASE DATE
+
+2014-04-27
+
+=head1 SPECIFICATION VERSION
+
+ 1
+
+=head1 ABSTRACT
+
+This document describes TableDef, a way to define table data.
+
+=head1 SPECIFICATION
+
+In this document, hashes are written in JSON or pseudo-JSON (e.g. contains
+ellipsis C<...> or JavaScript-style comments C<// ...>).
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL "NOT", "SHOULD",
+"SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
+interpreted as described in RFC 2119.
+
+A TableDef spec is written in L<DefHash>. It can be used to describe the
+structure of a relational database table, a CSV file, or an array of hashes.
+Tools can be written to convert a TableDef hash to SQL's CREATE TABLE statement,
+or to utilize information in the TableDef hash to format an HTML table, to view
+a DB grid on the web browser, etc.
+
+=head2 Properties
+
+=head3 summary => STR
+
+From DefHash. Table summary.
+
+=head3 description => STR
+
+From DefHash. Table longer description.
+
+=head3 tags => ARRAY
+
+From DefHash.
+
+=head3 fields => HASH
+
+A hash, where the keys are field names and the values field specification. See
+L</"FIELD SPECIFICATION">.
+
+=head3 pk => STR | ARRAY
+
+Specify the primary key for the table. Either a string containing a single field
+name, or an array of field names (for multi-field key).
+
+=head1 FIELD SPECIFICATION
+
+A DefHash.
+
+=head2 Properties
+
+=head3 schema* => STR|ARRAY
+
+L<Sah> schema. This property is required.
+
+=head3 summary => STR
+
+From DefHash. Field summary.
+
+=head3 description => STR
+
+From DefHash. Field longer description.
+
+=head3 tags => ARRAY
+
+From DefHash.
+
+=head3 pos => INT
+
+Specify the order of field. Must start from 0 and be contiguous.
+
+=head2 req => BOOL (default: 0)
+
+Whether this field is mandatory to be present. If 0, then function can choose to
+omit the field.
+
+=head3 sortable => BOOL (default: 1)
+
+Specify whether this field can be sorted.
+
+=head3 filterable => BOOL (default: 1)
+
+Specify whether this field can be used as a filter.
+
+=head1 HOMEPAGE
+
+Please visit the project's homepage at L<https://metacpan.org/release/TableDef>.
+
+=head1 SOURCE
+
+Source repository is at L<https://github.com/sharyanto/perl-TableSpec>.
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website L<https://rt.cpan.org/Public/Dist/Display.html?Name=TableDef>
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
+
+=head1 AUTHOR
+
+Steven Haryanto <stevenharyanto@gmail.com>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2014 by Steven Haryanto.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
