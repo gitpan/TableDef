@@ -18,11 +18,7 @@ TableDef - Table data definition
 
 =head1 VERSION
 
-version 1.0.3
-
-=head1 RELEASE DATE
-
-2014-04-27
+This document describes version 1.0.4 of TableDef (from Perl distribution TableDef), released on 2014-06-29.
 
 =head1 SPECIFICATION VERSION
 
@@ -110,13 +106,23 @@ Specify whether this field can be sorted.
 
 Specify whether this field can be used as a filter.
 
+=head3 include_by_default => BOOL (default: 1)
+
+This specifies that this field should be shown or included on "default view".
+What default view is will depend on the context or implementation. Usually you
+can set this to 0 if the field content is too long or wide. For example, in Perl
+module L<Perinci::Sub::Gen::AccessTable>, if you give C<< detail => 1 >> to the
+generated function, it will include all fields except fields that has this
+property set to 0. To include such fields, you'll need to explicitly issue C<<
+with.FIELDNAME => 1 >>.
+
 =head1 HOMEPAGE
 
 Please visit the project's homepage at L<https://metacpan.org/release/TableDef>.
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/sharyanto/perl-TableSpec>.
+Source repository is at L<https://github.com/sharyanto/perl-TableDef>.
 
 =head1 BUGS
 

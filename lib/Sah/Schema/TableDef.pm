@@ -4,7 +4,7 @@ use 5.010001;
 use strict;
 use warnings;
 
-our $VERSION = '1.0.3'; # VERSION
+our $VERSION = '1.0.4'; # VERSION
 
 our %SCHEMAS;
 
@@ -150,11 +150,7 @@ Sah::Schema::TableDef - Sah schemas to validate TableDef
 
 =head1 VERSION
 
-version 1.0.3
-
-=head1 RELEASE DATE
-
-2014-04-27
+This document describes version 1.0.4 of Sah::Schema::TableDef (from Perl distribution TableDef), released on 2014-06-29.
 
 =head1 SYNOPSIS
 
@@ -186,7 +182,7 @@ Please visit the project's homepage at L<https://metacpan.org/release/TableDef>.
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/sharyanto/perl-TableSpec>.
+Source repository is at L<https://github.com/sharyanto/perl-TableDef>.
 
 =head1 BUGS
 

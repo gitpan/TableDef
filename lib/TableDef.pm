@@ -1,7 +1,7 @@
 package TableDef;
 
-our $VERSION = '1.0.3'; # VERSION
-our $DATE = '2014-04-27'; # DATE
+our $VERSION = '1.0.4'; # VERSION
+our $DATE = '2014-06-29'; # DATE
 
 1;
 # ABSTRACT: Table data definition
@@ -18,11 +18,7 @@ TableDef - Table data definition
 
 =head1 VERSION
 
-version 1.0.3
-
-=head1 RELEASE DATE
-
-2014-04-27
+This document describes version 1.0.4 of TableDef (from Perl distribution TableDef), released on 2014-06-29.
 
 =head1 HOMEPAGE
 
@@ -30,7 +26,7 @@ Please visit the project's homepage at L<https://metacpan.org/release/TableDef>.
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/sharyanto/perl-TableSpec>.
+Source repository is at L<https://github.com/sharyanto/perl-TableDef>.
 
 =head1 BUGS
 
