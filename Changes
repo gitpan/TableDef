@@ -1,5 +1,10 @@
 Revision history for TableDef
 
+1.0.5   2014-09-20 (PERLANCAR)
+
+	- Add field spec property: unique.
+
+
 1.0.4   2014-06-29 (SHARYANTO)
 
         - Introduce field property 'include_by_default'.

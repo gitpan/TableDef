@@ -4,7 +4,7 @@ use 5.010001;
 use strict;
 use warnings;
 
-our $VERSION = '1.0.4'; # VERSION
+our $VERSION = '1.0.5'; # VERSION
 
 our %SCHEMAS;
 
@@ -150,7 +150,7 @@ Sah::Schema::TableDef - Sah schemas to validate TableDef
 
 =head1 VERSION
 
-This document describes version 1.0.4 of Sah::Schema::TableDef (from Perl distribution TableDef), released on 2014-06-29.
+This document describes version 1.0.5 of Sah::Schema::TableDef (from Perl distribution TableDef), released on 2014-09-20.
 
 =head1 SYNOPSIS
 
@@ -194,11 +194,11 @@ feature.
 
 =head1 AUTHOR
 
-Steven Haryanto <stevenharyanto@gmail.com>
+perlancar <perlancar@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Steven Haryanto.
+This software is copyright (c) 2014 by perlancar@cpan.org.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

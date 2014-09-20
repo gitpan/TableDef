@@ -18,7 +18,7 @@ TableDef - Table data definition
 
 =head1 VERSION
 
-This document describes version 1.0.4 of TableDef (from Perl distribution TableDef), released on 2014-06-29.
+This document describes version 1.0.5 of TableDef (from Perl distribution TableDef), released on 2014-09-20.
 
 =head1 SPECIFICATION VERSION
 
@@ -45,24 +45,24 @@ a DB grid on the web browser, etc.
 
 =head2 Properties
 
-=head3 summary => STR
+=head3 summary => str
 
 From DefHash. Table summary.
 
-=head3 description => STR
+=head3 description => str
 
 From DefHash. Table longer description.
 
-=head3 tags => ARRAY
+=head3 tags => array
 
 From DefHash.
 
-=head3 fields => HASH
+=head3 fields => hash
 
 A hash, where the keys are field names and the values field specification. See
 L</"FIELD SPECIFICATION">.
 
-=head3 pk => STR | ARRAY
+=head3 pk => str | array
 
 Specify the primary key for the table. Either a string containing a single field
 name, or an array of field names (for multi-field key).
@@ -73,40 +73,44 @@ A DefHash.
 
 =head2 Properties
 
-=head3 schema* => STR|ARRAY
+=head3 schema* => str | array
 
 L<Sah> schema. This property is required.
 
-=head3 summary => STR
+=head3 summary => str
 
 From DefHash. Field summary.
 
-=head3 description => STR
+=head3 description => str
 
 From DefHash. Field longer description.
 
-=head3 tags => ARRAY
+=head3 tags => array
 
 From DefHash.
 
-=head3 pos => INT
+=head3 pos => int
 
 Specify the order of field. Must start from 0 and be contiguous.
 
-=head2 req => BOOL (default: 0)
+=head3 req => bool (default: 0)
 
 Whether this field is mandatory to be present. If 0, then function can choose to
 omit the field.
 
-=head3 sortable => BOOL (default: 1)
+=head3 sortable => bool (default: 1)
 
 Specify whether this field can be sorted.
 
-=head3 filterable => BOOL (default: 1)
+=head3 filterable => bool (default: 1)
 
 Specify whether this field can be used as a filter.
 
-=head3 include_by_default => BOOL (default: 1)
+=head3 unique => bool
+
+Specify whether this field must contain unique values.
+
+=head3 include_by_default => bool (default: 1)
 
 This specifies that this field should be shown or included on "default view".
 What default view is will depend on the context or implementation. Usually you
@@ -134,11 +138,11 @@ feature.
 
 =head1 AUTHOR
 
-Steven Haryanto <stevenharyanto@gmail.com>
+perlancar <perlancar@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Steven Haryanto.
+This software is copyright (c) 2014 by perlancar@cpan.org.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
